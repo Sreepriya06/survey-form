@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles3.css" />
+  </head>  
+    <body>
+      <div class="container">
+        <header class="header">
+          <h1 class="text-center" id="title" >freeCodeCamp Survey Form</h1>
+          <p id="description">Thank you for your time to give feedback on our services and help us serve better</p>
+         </header>
+         <form id="survey-form">
+          <div class="form-group">
+           <label id="name-label" for="name">NAME</label>
+           <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name" required/> 
+           </div>
+           <div class="form-group">
+             <label id="email-label" for="email">EMAIL</label>
+             <input type="email" id="email" class="form-control" name="email" placeholder="Enter your Email"  required/>
+             </div>
+             <div class="form-group">
+               <label id="number-label" for="number" >AGE</label>
+               <input type="number" id="number" class="form-control" min="10" max="99" placeholder="Age" />
+               </div>
+               <div class="form-group">
+                 <p>Select the option that describes your current role</p>
+                 <select id="dropdown" name="role" class="form-control" required>
+                   <option disabled selected value>Select current role</option>
+                   <option value="student">Student</option>
+                   <option value="learner">Full time learner</option>
+                   <option value="job">Full time job</option>
+                   <option value="prefernot">Prefer not to say</option>
+                   <option value="other">Other</option>
+                   </select>
+                   </div>
+                   <div class="form-group">
+                     <p>Would you recommend freeCodeCamp to a friend</p>
+                     <label>
+                       <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+                       <label>
+                       <input name="user-recommend" value="maybe" type="radio" class="input-radio" checked />Maybe</label>
+                       <label>
+                       <input name="user-recommend" value="not-sure" type="radio" class="input-radio" checked />Not sure</label>
+                       </div>
+                       <div class="form-group">
+                         <p>Select your favorite feature of freeCodeCamp</p>
+                         <select id="most-like" name="most-like" class="form-control" required>
+                           <option disabled selected value>Select an option</option>
+                   <option value="challenges">Challenges</option>
+                   <option value="quality">Quality</option>
+                   <option value="projects">Projects</option>
+                   <option value="opensource">Open source</option>
+                   </div>
+                   <div class="form-group">
+                     
+                    <label>what</label>
+                                         
+                     <label>
+                       <input name="prefer" value="front-end" type="checkbox" class="input" />Front-end projects</label>
+                       <label>
+                       <input name="prefer" value="back-end" type="checkbox" class="input" />Back-end projects</label>
+                        <label>
+                       <input name="prefer" value="data-visualisation" type="checkbox" class="input" />Data-visualisation</label>
+                       <label>
+                       <input name="prefer" value="videos" type="checkbox" class="input" />Videos</label>
+                       <label>
+                       <input name="prefer" value="challenges" type="checkbox" class="input" />Challenges</label>
+                       <input name="prefer" value="courses" type="checkbox" class="input" />Additional courses</label>
+                       </div>
+                       <div class="form-group">
+                         <p>Any comments or suggestions?</p>
+                         <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                       </div>
+
+                       <div class="form-group">
+                         <button type="submit" id="submit" class="submit-button">Submit</button>
+                         </div>
+                         </form>
+                       </div>
+                    </body>
+                   </html>    
